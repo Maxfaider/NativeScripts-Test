@@ -1,0 +1,26 @@
+.page {
+    background-color: #2ecc71;
+}
+
+.container {
+    margin-top: 25%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container > * {
+    color: white;
+}
+
+.btn-next {
+    margin-top: 20%;
+    color: #222f3e;
+    background-color: white;
+    width: 80%;
+}
+
+.btn-link {
+    color: #222f3e;
+    width: 80%;
+}

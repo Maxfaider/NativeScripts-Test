@@ -1,0 +1,12 @@
+<Page navigatingTo="onNavigatingTo" xmlns="http://schemas.nativescript.org/tns.xsd">
+    <FlexboxLayout>
+        <Image src="~/images/batman.png" width="150" height="150"/>
+
+        <TextField id="email" text="{{ email }}" hint="Email Address" keyboardType="email" autocorrect="false" autocapitalizationType="none"
+            class="input input-border" />
+        <TextField secure="true" text="{{ password }}" hint="Password" class="input input-border" />
+
+        <Button text="Sign in" class="btn btn-primary" tap="signIn" />
+        <Button text="Sign up" class="link" tap="register" />
+    </FlexboxLayout>
+</Page>

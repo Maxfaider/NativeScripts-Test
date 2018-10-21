@@ -1,0 +1,13 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" loaded="onPageLoaded" class="page">
+
+    <StackLayout class="p-20">
+        <FlexboxLayout class="container">
+            <Image src="~/images/batman.png" width="150" height="150"/>
+            <Label text="{{ title }}" class="h1 text-center title"/>
+            <Label text="{{ message }}" class="text-center" textWrap="true"/>
+
+            <Button text="next" tap="{{ onNext }}" class="btn btn-next btn-active" />
+            <Button text="skip" tap="{{ onSkip }}" class="link btn-link" />
+        </FlexboxLayout>
+    </StackLayout>
+</Page>

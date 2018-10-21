@@ -1,0 +1,16 @@
+<Page navigatedTo="onNavigatedTo" xmlns="http://schemas.nativescript.org/tns.xsd" class="page">
+    <ActionBar title="Nativescript Test"></ActionBar>
+    <StackLayout>
+        <ListView items="{{ myTitles }}"
+                  itemTap="onItemTap"
+                  loaded="{{ onListViewLoaded }}"
+                  separatorColor="orangered" rowHeight="50"
+                  class="list-group" id="listView" row="2">
+            <ListView.itemTemplate>
+                <StackLayout class="list-group-item">
+                    <Label text="{{ title || 'Downloading...' }}" textWrap="true" class="title" />
+                </StackLayout>
+            </ListView.itemTemplate>
+        </ListView>
+    </StackLayout>
+</Page>
